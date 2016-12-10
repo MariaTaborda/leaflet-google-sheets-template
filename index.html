@@ -1,7 +1,7 @@
 <html>
 <head>
-  <title>Greenville Open Data Map Layer</title>
-  <meta name="description" content="A map layer for Greenville. See data.codeforgreenville.org for more."/>
+  <title>Greenville Open Data Map Recycling layer</title>
+  <meta name="description" content="A map layer for Greenville's recyling locations. See data.codeforgreenville.org for more."/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
   <link rel="stylesheet" href="./map.css" />
@@ -33,13 +33,14 @@
       };
 		
       var geoJsonData = JSON.parse(readJSON('geojson.php'));
+      console.log(geoJsonData);
 
       var mapLayer = MQ.mapLayer(), map;
 
       map = L.map('map', {
         layers: mapLayer,
         center: [ 34.8507212,-82.3985128 ],
-        zoom: 15
+        zoom: 10
       });
 
       L.control.layers({
