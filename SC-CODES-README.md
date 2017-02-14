@@ -1,15 +1,11 @@
-#SC Code Week 8-12 Project Goals
-* Jump to [Week 8](#week8)
-* Jump to [Week 9](#week9)
-* Jump to [Week 10](#week10)
-* Jump to [Week 11-12](#week11)
+#SC Codes Week Project Goals
 
-##<a name="week8">Goals for Week 8</a>
+##<a name="week2">Goals for Week 2</a>
 1. Setup a Cloud9 account using the invite sent via email by Pamela (if it asks for a credit card contact Pamela)
 1. Connect your GitHub account to Cloud9 [via Connected Services](https://c9.io/account/services)
 1. Start thinking about ideas for open/public data you'd like to gather and share with the world.
 1. Understand the [broader purpose of this open data project](https://github.com/codeforgreenville/leaflet-google-sheets-template/blob/master/README.md)
-1. Continue reading below for details about weeks 8 and 9
+1. Continue reading below for details about weeks 2 and 3
 
 ###Ideally, your data set should:
 * already be publicly discoverable
@@ -23,15 +19,15 @@
 
 Non-profits, the City, and the County would be ideal examples of places to find existing public data that's trapped. In other cases, you may need to do the research / leg work to create the data.
 
-Good example: The [City has a map of parking decks](http://www.greenvillesc.gov/513/Parking) but the data is stuck inside of the embedded Google map at the bottom. You can't easily take that map and easily pull it into a Leaflet layer.  Wouldn't it be great if it was a real-time GeoJSON based Leaflet map pulling from your project? (Answer: yes)
+Good example: The [City has a map of parking decks](http://www.greenvillesc.gov/513/Parking) but the data was stuck inside of the embedded Google map at the bottom. You can't easily take that map and pull it into your own map.  Wouldn't it be great if it was a real-time GeoJSON-based data layer? (Answer: yes)
 
 Bad Examples: Things like Greenville restaurants, potholes, or vape shops. These change frequently and/or are already done well enough by other services.
 
 ###Map Data Ideas and Staking Your Claim
 
-Below is intended to seed your brain. If it sparks an idea of your own then add your idea and name to the [open data spreadsheet](https://docs.google.com/spreadsheets/d/1IWsFT1p0ZY-DInfMOFq_gmqpGuKyl5wyBb9VoyoEjRs/edit#gid=0)
+Below is intended to seed your brain. The [first class of SC Codes implemented many of the ideas below](https://data.openupstate.org/maps/) so this class will have to put more effort into original ideas.
 
-If nobody else has claimed a suggested idea then you're welcome to take it by putting your name beside in [the list](https://docs.google.com/spreadsheets/d/1IWsFT1p0ZY-DInfMOFq_gmqpGuKyl5wyBb9VoyoEjRs/edit#gid=0)
+Please review the existing layers and add your name and idea to [the list](https://docs.google.com/spreadsheets/d/1IWsFT1p0ZY-DInfMOFq_gmqpGuKyl5wyBb9VoyoEjRs/edit#gid=0) to reserve
 
 * Libraries
 * Historic Sites
@@ -48,8 +44,8 @@ If nobody else has claimed a suggested idea then you're welcome to take it by pu
 * Tree Planting Sites
 * Public (K-12) Schools
 
-##<a name="week9">Goals for Week 9</a>
-1. Complete the Week 8 goals above
+##<a name="week3">Goals for Weeks 3-5</a>
+1. Complete the Week 2 goals above
 1. Fork the GitHub Project
 1. Setup a Cloud9 Workspace that talks with your GitHub fork
 1. Do a basic Git command and push to GitHub
@@ -92,7 +88,7 @@ If nobody else has claimed a suggested idea then you're welcome to take it by pu
 1. Now, read the main [README.md](https://github.com/codeforgreenville/leaflet-google-sheets-template/blob/master/README.md) file for details on how to create a public spreadsheet and a Leaflet map.
 1. Side note: You can ignore messages like "This branch is 1 commit ahead, 1 commit behind codeforgreenville:master." on your GitHub fork page. This means changes were made to the project you forked. You're on your own now and don't need to keep in sync with the fork's origin.
 
-##<a name="week10">Goals for Week 10</a>
+##<a name="week6">Goals for Week 6-8</a>
 1. Add your GitHub repository, geojson.php URL, and Google Sheet URLs to the [open data list](https://docs.google.com/spreadsheets/d/1IWsFT1p0ZY-DInfMOFq_gmqpGuKyl5wyBb9VoyoEjRs/edit#gid=0)
 1. Git add, commit, and push your changes from Cloud 9 up to GitHub.
 
@@ -102,7 +98,7 @@ Please share your GitHub repository, GeoJSON URL, and Google Spreadsheet in the 
 Through the power of GitHub, we'll publically publish your map and geojson under a directory of https://data.openupstate.org/maps/, which will become the reliable, hosted location for the public.  If/as you modify the project in the future we'd be able to easily pull your changes to https://data.openupstate.org/maps/
 
 ### Git Commit and Push
-In week 9 you changed the index.html and geojson.php.  Let's add and commit these chages to version control using Git.
+In weeks 3-5 you changed the index.html and geojson.php.  Let's add and commit these chages to version control using Git.
 
 Go to your Cloud 9 workspace and click in the terminal tab at the bottom.
 
@@ -119,7 +115,7 @@ Commit the staged changes using ``git commit -m 'Customized Leaflet and PHP GeoJ
 Now let your GitHub repo know about your commit by running ``git push origin master`` or the shortcut ``git push``
 The repo on GitHub is configured as your git remote "origin" and you only have a single "master" branch, hence pushing to origin master sends changes from your master branch up to GitHub.
 
-##<a name="week11">Goals for Week 11-12</a>
+##<a name="week9">Goals for Week 9-10</a>
 1. Add a Git upstream, merge in changes from the upstream, resolve a simple merge conflict
 1. (Optional) Choose your adventure if you want to flex your coding skills on more advanced mapping concepts.
 
